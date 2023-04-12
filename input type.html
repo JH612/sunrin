@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" method="post" action="">
+        색을 선택해주세요: <input type="color"><br>
+        숫자를 입력하세요(1~100) 
+        <input type="number" max="100" min="0" step="10" value="50"><br>
+        슬라이드를 움직여 만족도를 입력하세요(1~10)
+        <input type="range" min="1" max="10" value="5"><br>
+        성별을 선택해주세요.<br>
+        <select name="gender_select">
+            <option value="female" selected>여성</option><!--vlaue 부분은 서버에 갈 값이고 사용자에게 보여줄것은 여성부분-->
+            <option value="female" >남성</option>
+        </select><br>
+        <p>선호하는 브라우저를 선택해주세요.</p>
+        <form action="process.jsp">
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="구글 크롬"></option>
+                <option value="엣지"></option>
+                <option value="오페라"></option>
+                <option value="사파리"></option>
+                <option value="파이어폭스"></option>
+            </datalist>
+            <input type="submit"><!--select태그의 경우 사용자가 정해져있는 보기에서만 선택할 수 있지만 
+                datelist를 사용하면 사용자가 원하는 값을 입력할 수도 있고 보기중에서 선택할 수도 있다.-->
+        </form>
+        
+    </form>
+</body>
+</html>
