@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{color:red;}
+        *{color: blue;}
+        #special{color:rgb(109, 218, 109);}
+        .group1{background-color: sandybrown;}
+        h1, p{font-size: 40px;}
+        body em { color: red; }/*후손관계*/
+        body > h1 { color: blue; } /*자식관계*/
+        a:link {color:blue;}
+        a:visited {color:green;}
+        p:hover { color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>웹 프로그래밍</h1>
+    <p class="group1">html 학습하기</p>
+    <p id="special">css 학습하기</p><!--따로 구분하고 싶을때 아이디 설정-->
+    <p class="group1">JAVASCRIPT 학습하기</p>
+    <a href="https://www.w3c.org">참고 사이트 w3c</a>
+</body>
+</html>
