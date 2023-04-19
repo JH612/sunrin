@@ -1,0 +1,16 @@
+*{
+    color: gray;
+}
+h3:hover{
+    background-color: green;
+}
+a:visited{
+    color: purple;
+} 
+a:link{
+    color: red;
+}
+#name{
+    background-color: yellow; color: red;
+}
+</style>
