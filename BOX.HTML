@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .th4{
+            border:5px solid red;
+            border-radius: 10px;
+        }
+        .th5{
+            border:10px dotted yellow;
+        }
+        .th6{
+            border:1px dashed blue;
+        }
+        div{
+            border: 30px solid transparent;
+            width:300px;
+            height:50px;
+            border-image: url(border.png) 100 100 round;;
+        }
+        .test{
+        border:2px solid blue;
+    }
+    </style><!--1학년 4,5,6에 스타일 넣기-->
+</head>
+<body>
+    <P style="border-style:none">none</P>
+    <P style="border-style:dotted">dotted</P>
+    <P style="border-style:dashed">dashed</P> <!--solid, double, groove, ridge, inset, outset 등이 있음-->
+    <p class="th4">1학년 4반</p>
+    <p class="th5">1학년 5반</p>
+    <p class="th6">1학년 6반</p>
+    <div class="test">연습문제 정답입니다.</div>
+    <div>경계 이미지가 반복된다.</div>
+</body>
+</html>
