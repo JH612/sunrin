@@ -1,0 +1,17 @@
+.container{
+    width: 250px;
+    height: 1000px;
+    background-color: royalblue;
+    display: flex;
+    flex-direction: row;/*column, column-reverse, row등으로도 아이템 설정 가능*/
+    flex-wrap: wrap;
+    /*justify-content: center;*//*display: flex;가 있어서 사용 가능*/
+    align-content: flex-end;/*flex-start(컨테이너의 시작부분), stretch(비율로 똑같은 간격으로 늘리기), center(컨테이너의 중앙) */
+}
+
+.container .item{
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}

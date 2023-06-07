@@ -1,0 +1,43 @@
+.wrap{
+    width: 400px;
+    height: 300px;
+    background-color: violet;
+    position: relative;
+}
+
+.container{
+    width: 300px;
+    background-color: royalblue;
+}
+
+.container .item{
+    border: 4px dashed red;
+    background-color: orange;
+}
+
+.container .item:nth-child(1){
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    position: relative;
+    display: inline;
+}
+
+.container .item:nth-child(2){
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    /*relative는 원래 요소의 위치가 기준, absolute는 부모의 위치가 기준, fixed는 전체 화면이 기준*/
+    left: 10px;
+    top: 60px;
+    z-index: 2;
+    display: inline;
+}
+
+.container .item:nth-child(3){
+    width: 70px;
+    height: 120px;
+    position: relative;
+    z-index: 3;
+    display: inline-block;/*인라인 블럭은 같은 줄에 옆으로 나열하는 인라인 + 크기 설정 가능한 블럭*/
+}
