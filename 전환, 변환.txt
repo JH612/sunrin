@@ -1,0 +1,15 @@
+전환 transition
+: css를 사용하면 하나의 형태에서 다른 형태로 변화되는 효과를 추가할 수 있다
+전환을 지정하기 위해서는 다음과 같은 2가지를 지정하여야 한다.
+1)효과를 추가하고 싶은 css 속성을 지정한다.
+2)효과의 지속 시간을 지정한다.
+3)가상선택자(hover):전환요소의 변화값
+ex) transition : width(전환의 대상이 되는 속성) 5s(지속 시간);
+
+변환 transform
+- rotate, translate, scale등으로 크키지정, 회전, 비틀기 등이 가능하다.
+- matrix()메소드는 모든 2차원 변환을 하나로 결합한다.
+ex) transform: translate(100px, 100px) -> 수평이동
+ex) transform: rotate(-45deg); -> 회전
+ex) transform: scale(2,2); -> 크키조절
+ex) transform: skew(30deg, 0); -> x, y 축으로 주어진 각도만큼 비틀기
