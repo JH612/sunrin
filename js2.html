@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="test">안녕하세요</h1>
+    <script>
+        let x = 5;
+        let y = 6;
+        let z = x+y;
+        document.getElementById("test").innerHTMl = z; //alert(z);를 이용해서 팝업 창으로도 보여줄 수 있음
+        console.log(y);//개발자툴에서 콘솔탭에서 값 확인가능
+        document.write(y);
+    </script>
+    <!--h1에 안녕하세요를 넣었지만 z값에 덮여서 11만 출력됨-->
+</body>
+</html>
