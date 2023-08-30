@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = 10;
+        function add(){
+            let a = 15; // 지역변수 a를 15로 선언 처음에 선언한 a와는 다른 a이기 때문에 처음에 선언한 전역변수 a의 값은 안바뀜
+            console.log(a);
+            let b = 20;//지역변수로 한정해서 선언시킴
+            cnt = 0; //let 사용 안하고 전역변수로 선언함
+        }
+        add();
+        console.log(a);
+        console.log(cnt); //전역변수로 선언했기 때문에 cnt 사용 가능
+        console.log(b); //함수 안에서 선언한 b이기 때문에 밖에서 사용 불가능
+    </script>
+
+</body>
+</html>

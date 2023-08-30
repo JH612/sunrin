@@ -1,0 +1,17 @@
+반복문
+(while문, for문 학습)
+
+함수
+(매개변수, 인수, 무명함수, 화살표함수 학습)
+화살표 함수
+
+(a, b) => { return a+b; }
+(a, b) => return a+b;
+(a, b) => a+b;
+
+(a, b) => {
+    let data = 29;
+    return a + b + data;
+}
+
++ 다음주 수요일 웹프 수행 예정
