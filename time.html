@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <h2 id='clock'></h2>
+    <script>
+        function setClock() {
+            let now = new Date(); //현재시간
+            let s = now.getHours() + ':' + now.getMinutes() + ':' + now.getSeconds(); //현재시간인 now에서 get~() 사용해서 시간,분,초 받아오기
+	    //출력부분 document.....
+        document.getElementById('clock').innerHTML = s;
+            
+
+
+            setTimeout('setClock()', 1000);
+        }
+        //함수실행부분
+        setClock(); //setClock함수 실행하기
+    </script>
+
+</body>
+</html>
