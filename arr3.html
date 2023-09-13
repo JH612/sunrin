@@ -1,0 +1,32 @@
+<html>
+<head></head>
+<body>
+    <script>
+        function printArray(a) {
+            document.write("[ ");
+            for (let i = 0; i < a.length; i++){
+                document.write(a[i] + " ");
+            }
+            document.write(" ] <br>");
+        }
+
+        let a = new Array();
+        a[0] = "aaa" // 문자
+        a[1] = new Date(); //객체
+        a[2] = 3.14 // tlftn
+        a[100] = 10
+        //a[3]~a[99],a[101]~는 undefined로 아무값도 들어있지 않음
+
+        let myArray1 = new Array();
+        myArray1[0] = "apple";
+        myArray1[1] = "banana";
+        myArray1[2] = "orange";
+
+        let myArray2 = new Array("apple", "banana", "orange");
+        let myArray3 = ["apple", "banana", "orange"];
+
+        printArray(myArray1);
+        printArray(myArray2);
+        printArray(myArray3);
+    </script>
+</body></html>

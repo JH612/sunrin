@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calc(type) {
+            let x = parseFloat(document.calculator.number1.value);
+            let x2 = parseFloat(document.calculator.number2.value);
+            if (type == 1)
+                y = Math.sin((x * Math.PI) / 180.0);
+            else if (type == 2)
+                y = Math.log(x);
+            else if (type == 3)
+                y = Math.sqrt(x);
+            else if (type == 4)
+                y = Math.abs(x);
+            else if (type == 5)
+                y = Math.sin((x2 * Math.PI) / 180.0);
+            else if (type == 6)
+                y = Math.log(x2);
+            else if (type == 7)
+                y = Math.sqrt(x2);
+            else if (type == 8)
+                y = Math.abs(x2);
+            else if (type == 9)
+                y = Math.max(x, x2);
+            else if(type == 10)
+                y = Math.min(x, x2);
+            else if(type == 11)
+                y = Math.random();
+            else if(type == 12)
+                y = Math.sign(x);
+            else if(type == 13)
+                y = Math.cbrt(x);
+            else if(type == 14)
+                y = Math.sign(x2);
+            else if(type == 15)
+                y = Math.cbrt(x2);
+            document.calculator.total.value = y;
+        }
+    </script>
+</head>
+<body>
+    <form name="calculator">
+        x1 입력:               <input type="text" name="number1"><br />
+        x2 입력:               <input type="text" name="number2"><br />
+        계산 결과:          <input type="text" name="total"><br />
+
+        <input type="button" value="x1의 SIN" onclick="calc(1);">
+        <input type="button" value="x1의 LOG" onclick="calc(2);">
+        <input type="button" value="x1의 SQRT" onclick="calc(3);">
+        <input type="button" value="x1의 절대값" onclick="calc(4);">
+        <input type="button" value="x1의 부호" onclick="calc(12);">
+        <input type="button" value="x1의 세제곱근" onclick="calc(13);"> <br>
+        <input type="button" value="x2의 SIN" onclick="calc(5);">
+        <input type="button" value="x2의 LOG" onclick="calc(6);">
+        <input type="button" value="x2의 SQRT" onclick="calc(7);">
+        <input type="button" value="x2의 절대값" onclick="calc(8);">
+        <input type="button" value="x1의 부호" onclick="calc(14);">
+        <input type="button" value="x1의 세제곱근" onclick="calc(15);"><br>
+        <input type="button" value="x1, x2 중 최대값" onclick="calc(9);">
+        <input type="button" value="x1, x2 중 최소값" onclick="calc(10);">
+        <input type="button" value="난수" onclick="calc(11);">
+    </form>
+</body>
+</html>
